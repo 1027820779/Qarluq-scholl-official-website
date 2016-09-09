@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta id="viewport" name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="Keywords" content="卡尔罗公司,卡尔罗,IT学校,编程,qarluq,IT技能,IT公司,it技能培训,php开发,学校官网"/>
+    <meta name="Description"
+          content="新疆卡尔罗计算机培训学校（Qarluq）是新疆最大的计算机培训学校。学校提供了丰富的移动端开发、php开发、web前端、android开发以及html5等开发团队。"/>
+    <meta charset="UTF-8">
+    <title>Qarluq Education</title>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/slider-pro.min.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/examples.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style3.css" />
+    <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/jwplayer.js"></script>
+    <script type="text/javascript" src="js/jwplayer.html5.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                fitToView: false,
+                content: '<span></span>', // create temp content
+                scrolling: 'no',
+                afterLoad: function () {
+                    var $width = $(this.element).data('width'); // get dimensions from data attributes
+                    var $height = $(this.element).data('height');
+                    this.content = "<embed src='player.swf?file=" + this.href + "&autostart=true&amp;wmode=opaque' type='application/x-shockwave-flash' width='" + $width + "' height='" + $height + "'></embed>"; // replace temp content
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+<!--------header start-->
+
+<div class="header_top">
+    <div class="logo"></div>
+    <div class="big_title">قارلۇق مەكتىپى</div>
+    <div class="title">سەنئەت + تىخنىكىنى ئاساس قىلغان مائارىپ سۇپىسى</div>
+    <div class="link">
+        <span>0991-2877080</span>
+        <a href="html/login.html"><span>تىزىملىتىش ئۇچۇرى</span></a>
+        <span>|</span>
+        <span>ئالاقىلىشىش</span>
+    </div>
+</div>
+
+<div class="header_video">
+    <div class="menu_bar">
+        <ul>
+            <li><a class="active" href="#">بىز</a></li>
+            <li><a href="html/training_program.html">تەربىيلىنىش پىروگىراممىسى</a></li>
+            <li><a href="html/login.html">تىزىملىتىش</a></li>
+            <li><a href="html/atmosphere.html">ئاتموسفىرا</a></li>
+            <li><a href="html/community.html">جەمىيەت</a></li>
+        </ul>
+    </div>
+    <video autoplay="autoplay" class="video" loop="loop" muted="muted" preload="auto">
+        <source src="video/video.mp4" type="video/mp4"/>
+    </video>
+    <div class="video_title">
+        <div class="wrap">
+            <a class="fancybox" href="video/qarluq_scholl.mp4" data-width="1000" data-height="600">
+                <div class="video_link">
+                    <div class="controller"></div>
+                    <div class="controller_word">مەكتەپ فىلىمىنى كۆرۈش</div>
+                </div>
+            </a>
+
+            <div class="video_word">كەلگۈسىنى تەسەۋۇر قىلىشنىڭ ئەڭ - ياخشى ئۇسسۇلى كەلگۈسىنى يارتىش</div>
+        </div>
+    </div>
+</div>
+
+
+<!--------header end-->
+
+<!--------Training Program start-->
+<div class="training_program">
+    <div class="training">
+        <ul>
+            <li>
+                <a href="html/atmosphere.html">
+                    <img src="image/rakam.jpg">
+
+                    <div>
+                        <h1>رەقەملىك مەھسۇلات</h1>
+                    <span>كۆچمە مەھسۇلاتلارنى ئاساس قىلغان مەزمۇن ۋە ئ‍نتىرنىت
+تەسىراتى. ئۇچۇر تېخنىكا سانائىتىنىڭ كەلگۈسى . </span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="html/atmosphere.html">
+                    <img src="image/game.jpg">
+
+                    <div>
+                        <h1>جانلاندۇرۇم ۋە ئ‍ىنتىرەكتىۋ ئ‍ويۇن</h1>
+                        <span>كۆچمە مەھسۇلاتلارنى ئاساس قىلغان مەزمۇن ۋە ئ‍نتىرنىت
+تەسىراتى. ئۇچۇر تېخنىكا سانائىتىنىڭ كەلگۈسى .</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="html/atmosphere.html">
+                    <img src="image/mobile.jpg">
+
+                    <div>
+                        <h1>كۆچمە ئېنتىرنىت </h1>
+                        <span>كۆچمە مەھسۇلاتلارنى ئاساس قىلغان مەزمۇن ۋە ئ‍نتىرنىت
+تەسىراتى. ئۇچۇر تېخنىكا سانائىتىنىڭ كەلگۈسى .</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--------Training Program end-->
+
+<!--------Excellent works start-->
+<div class="excellent_works">
+    <div class="excellent_title">يۇلتۇز دەرجىلىك گۈزەل ئەسەرلەر</div>
+    <div class="excellent">
+        <div class="htmleaf-container">
+            <div class="htmleaf-content">
+                <div id="example5" class="slider-pro">
+                    <div class="sp-slides">
+                        <div class="sp-slide">
+                            <img class="sp-image" src="image/1.jpg"
+                                 data-src="image/1.jpg"
+                                 data-retina="image/1.jpg"/>
+
+                            <div class="sp-caption"> بىر شىركەتنىڭ ئىستىقبالىنىڭ قانداق بۇلۇشى كەلگۈسى ئۈچۈن قانداق ئۇل ھازىرلىغانلىقىدىدۇر</div>
+                        </div>
+
+                        <div class="sp-slide">
+                            <img class="sp-image" src="image/2.jpg"
+                                 data-src="image/2.jpg"
+                                 data-retina="image/2.jpg"/>
+
+                            <div class="sp-caption">تەتقىقات تېمىسى ئېنىق ئايرىلغان گورۇپپىلاردىن تەشكىللەنگەن قوشۇنىمىز قارلۇق ئەپلىرىنى بارلىققا كەلتۈردى</div>
+                        </div>
+                        <div class="sp-slide">
+                            <img class="sp-image" src="image/3.jpg"
+                                 data-src="image/3.jpg"
+                                 data-retina="image/3.jpg"/>
+
+                            <div class="sp-caption">مەخپىيەتلىك كىلشىمى سىزنىڭ بىزگە تەمىنلەيدىغان ئۇچۇرلىرىڭىزنىڭ مەزمۇنىغا ۋە ئۇچۇرللارنىڭ مەخپىيەتلىكىنى ساقلايدۇ</div>
+                        </div>
+                        <div class="sp-slide">
+                            <img class="sp-image" src="image/4.jpg"
+                                 data-src="image/4.jpg"
+                                 data-retina="image/4.jpg"/>
+
+                            <div class="sp-caption">مەنىۋى دۇنياسى مول ئادەم چوقۇم كۆپ ئوقۇغان ئادەم. ئوقۇش سەپسەتە سۆزلەش ئەمەس، قائىدە ـ داۋلى سۆزلەشمۇ ئەمەس، بىر خىل تۇيغۇنىڭ تاۋلىنىشى.</div>
+                        </div>
+                        <div class="sp-slide">
+                            <img class="sp-image" src="image/5.jpg"
+                                 data-src="image/5.jpg"
+                                 data-retina="image/5.jpg"/>
+
+                            <div class="sp-caption">بالا ئوقۇشنى ياخشى كۆرۈسە، قەلبنىڭ تەسەللىسىگە ئېرىشەلەيدۇ، تۇرمۇشنىڭ ئۈلگىسىنى تاپالايدۇ.</div>
+                        </div>
+                        <div class="sp-slide">
+                            <img class="sp-image" src="image/6.jpg"
+                                 data-src="image/6.jpg"
+                                 data-retina="image/6.jpg"/>
+
+                            <div class="sp-caption">　كەينىدە قالغان ئوقۇغۇچىلار بەلكىم دەرسنى چۈشىنەلمىسىمۇ، يەنىلا ئورنىدا ئولتۇرۇپ دەرس ئاڭلاشنى داۋاملاشتۇرىدۇ. </div>
+                        </div>
+                        <div class="sp-slide">
+                            <img class="sp-image" src="image/7.jpg"
+                                 data-src="image/7.jpg"
+                                 data-retina="image/7.jpg"/>
+
+                            <div class="sp-caption">　ياخشى تەربىيە بالىنىڭ ئۆمرى ئۈچۈن ياخشى ئاساس. خاتا مائارىپ تەربىيىسىز قالغاندىنمۇ يامان.</div>
+                        </div>
+                        <div class="sp-slide">
+                            <img class="sp-image" src="image/8.jpg"
+                                 data-src="image/8.jpg"
+                                 data-retina="image/8.jpg"/>
+
+                            <div class="sp-caption">　ياخشى تەربىيە بالىنىڭ ئۆمرى ئۈچۈن ياخشى ئاساس. خاتا مائارىپ تەربىيىسىز قالغاندىنمۇ يامان.</div>
+                        </div>
+                    </div>
+
+                    <div class="sp-thumbnails">
+                        <div class="sp-thumbnail">
+                            <div class="sp-thumbnail-image-container">
+                                <img class="sp-thumbnail-image"
+                                     src="image/1.jpg"/>
+                            </div>
+                            <div class="sp-thumbnail-text">
+                                <div class="sp-thumbnail-title">ئەلقەم ئەنۋەر</div>
+                                <div class="sp-thumbnail-description">سەنئەتسىز لايىھە لايىھە بولمايدۇ</div>
+                            </div>
+                        </div>
+
+                        <div class="sp-thumbnail">
+                            <div class="sp-thumbnail-image-container">
+                                <img class="sp-thumbnail-image"
+                                     src="image/2.jpg"/>
+                            </div>
+                            <div class="sp-thumbnail-text">
+                                <div class="sp-thumbnail-title">ئەلقەم ئەنۋەر</div>
+                                <div class="sp-thumbnail-description">سەنئەتسىز لايىھە لايىھە بولمايدۇ</div>
+                            </div>
+                        </div>
+                        <div class="sp-thumbnail">
+                        <div class="sp-thumbnail-image-container">
+                            <img class="sp-thumbnail-image"
+                                 src="image/3.jpg"/>
+                        </div>
+                        <div class="sp-thumbnail-text">
+                            <div class="sp-thumbnail-title">ئەلقەم ئەنۋەر</div>
+                            <div class="sp-thumbnail-description">سەنئەتسىز لايىھە لايىھە بولمايدۇ</div>
+                        </div>
+                    </div>
+                        <div class="sp-thumbnail">
+                            <div class="sp-thumbnail-image-container">
+                                <img class="sp-thumbnail-image"
+                                     src="image/4.jpg"/>
+                            </div>
+                            <div class="sp-thumbnail-text">
+                                <div class="sp-thumbnail-title">ئەلقەم ئەنۋەر</div>
+                                <div class="sp-thumbnail-description">سەنئەتسىز لايىھە لايىھە بولمايدۇ</div>
+                            </div>
+                        </div>
+                        <div class="sp-thumbnail">
+                            <div class="sp-thumbnail-image-container">
+                                <img class="sp-thumbnail-image"
+                                     src="image/5.jpg"/>
+                            </div>
+                            <div class="sp-thumbnail-text">
+                                <div class="sp-thumbnail-title">ئەلقەم ئەنۋەر</div>
+                                <div class="sp-thumbnail-description">سەنئەتسىز لايىھە لايىھە بولمايدۇ</div>
+                            </div>
+                        </div>
+                        <div class="sp-thumbnail">
+                            <div class="sp-thumbnail-image-container">
+                                <img class="sp-thumbnail-image"
+                                     src="image/6.jpg"/>
+                            </div>
+                            <div class="sp-thumbnail-text">
+                                <div class="sp-thumbnail-title">ئەلقەم ئەنۋەر</div>
+                                <div class="sp-thumbnail-description">سەنئەتسىز لايىھە لايىھە بولمايدۇ</div>
+                            </div>
+                        </div>
+                        <div class="sp-thumbnail">
+                            <div class="sp-thumbnail-image-container">
+                                <img class="sp-thumbnail-image"
+                                     src="image/7.jpg"/>
+                            </div>
+                            <div class="sp-thumbnail-text">
+                                <div class="sp-thumbnail-title">ئەلقەم ئەنۋەر</div>
+                                <div class="sp-thumbnail-description">سەنئەتسىز لايىھە لايىھە بولمايدۇ</div>
+                            </div>
+                        </div>
+                        <div class="sp-thumbnail">
+                            <div class="sp-thumbnail-image-container">
+                                <img class="sp-thumbnail-image"
+                                     src="image/8.jpg"/>
+                            </div>
+                            <div class="sp-thumbnail-text">
+                                <div class="sp-thumbnail-title">ئەلقەم ئەنۋەر</div>
+                                <div class="sp-thumbnail-description">سەنئەتسىز لايىھە لايىھە بولمايدۇ</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--------Wisdom word start-->
+<div class="wisdom_word">
+    <div class="wisdom">
+        <div class="container">
+            <section class="pe-container">
+                <ul id="pe-thumbs" class="pe-thumbs">
+                    <li><img src="image/thumbs/1.jpg" /><div class="pe-description"><h3>پەخىردىن قارلۇق</h3><p>شىنجاڭ قارلۇق شىركىتىنىڭ قۇرغۇچىسى</p></div></li>
+                    <li><img src="image/thumbs/2.jpg" /><div class="pe-description"><h3>ئىلياس ئابدۇۋەلى</h3><p>قارلۇق مەكتەپ مەسئۇلى</p></div></li>
+                    <li><img src="image/thumbs/3.jpg" /><div class="pe-description"><h3>مۇزەپپەر ئوسمان</h3><p>كۆچمە ئىنتىرنىت بۆلۈم باشلىقى</p></div></li>
+                    <li><img src="image/thumbs/4.jpg" /><div class="pe-description"><h3>ئادىل سەۋىر</h3><p>غوللۇق ئالما پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/5.jpg" /><div class="pe-description"><h3>يۇسۈپ ئەخمەت</h3><p>مەسۇلات كۆرۈنمە يۈز لاھىيلىگۈچى</p></div></li>
+                    <li><img src="image/thumbs/6.jpg" /><div class="pe-description"><h3>شىرئەلى ۋەلى</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/7.jpg" /><div class="pe-description"><h3>ئەركىن قۇربان</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/8.jpg" /><div class="pe-description"><h3>ئابدۇسالام تۇرسۇن</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/1.jpg" /><div class="pe-description"><h3>پەخىردىن قارلۇق</h3><p>شىنجاڭ قارلۇق شىركىتىنىڭ قۇرغۇچىسى</p></div></li>
+                    <li><img src="image/thumbs/2.jpg" /><div class="pe-description"><h3>ئىلياس ئابدۇۋەلى</h3><p>قارلۇق مەكتەپ مەسئۇلى</p></div></li>
+                    <li><img src="image/thumbs/3.jpg" /><div class="pe-description"><h3>مۇزەپپەر ئوسمان</h3><p>كۆچمە ئىنتىرنىت بۆلۈم باشلىقى</p></div></li>
+                    <li><img src="image/thumbs/4.jpg" /><div class="pe-description"><h3>ئادىل سەۋىر</h3><p>غوللۇق ئالما پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/5.jpg" /><div class="pe-description"><h3>يۇسۈپ ئەخمەت</h3><p>مەسۇلات كۆرۈنمە يۈز لاھىيلىگۈچى</p></div></li>
+                    <li><img src="image/thumbs/6.jpg" /><div class="pe-description"><h3>شىرئەلى ۋەلى</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/7.jpg" /><div class="pe-description"><h3>ئەركىن قۇربان</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/8.jpg" /><div class="pe-description"><h3>ئابدۇسالام تۇرسۇن</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/1.jpg" /><div class="pe-description"><h3>پەخىردىن قارلۇق</h3><p>شىنجاڭ قارلۇق شىركىتىنىڭ قۇرغۇچىسى</p></div></li>
+                    <li><img src="image/thumbs/2.jpg" /><div class="pe-description"><h3>ئىلياس ئابدۇۋەلى</h3><p>قارلۇق مەكتەپ مەسئۇلى</p></div></li>
+                    <li><img src="image/thumbs/3.jpg" /><div class="pe-description"><h3>مۇزەپپەر ئوسمان</h3><p>كۆچمە ئىنتىرنىت بۆلۈم باشلىقى</p></div></li>
+                    <li><img src="image/thumbs/4.jpg" /><div class="pe-description"><h3>ئادىل سەۋىر</h3><p>غوللۇق ئالما پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/5.jpg" /><div class="pe-description"><h3>يۇسۈپ ئەخمەت</h3><p>مەسۇلات كۆرۈنمە يۈز لاھىيلىگۈچى</p></div></li>
+                    <li><img src="image/thumbs/6.jpg" /><div class="pe-description"><h3>شىرئەلى ۋەلى</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/7.jpg" /><div class="pe-description"><h3>ئەركىن قۇربان</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/8.jpg" /><div class="pe-description"><h3>ئابدۇسالام تۇرسۇن</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/1.jpg" /><div class="pe-description"><h3>پەخىردىن قارلۇق</h3><p>شىنجاڭ قارلۇق شىركىتىنىڭ قۇرغۇچىسى</p></div></li>
+                    <li><img src="image/thumbs/2.jpg" /><div class="pe-description"><h3>ئىلياس ئابدۇۋەلى</h3><p>قارلۇق مەكتەپ مەسئۇلى</p></div></li>
+                    <li><img src="image/thumbs/3.jpg" /><div class="pe-description"><h3>مۇزەپپەر ئوسمان</h3><p>كۆچمە ئىنتىرنىت بۆلۈم باشلىقى</p></div></li>
+                    <li><img src="image/thumbs/4.jpg" /><div class="pe-description"><h3>ئادىل سەۋىر</h3><p>غوللۇق ئالما پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/5.jpg" /><div class="pe-description"><h3>يۇسۈپ ئەخمەت</h3><p>مەسۇلات كۆرۈنمە يۈز لاھىيلىگۈچى</p></div></li>
+                    <li><img src="image/thumbs/6.jpg" /><div class="pe-description"><h3>شىرئەلى ۋەلى</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/7.jpg" /><div class="pe-description"><h3>ئەركىن قۇربان</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/8.jpg" /><div class="pe-description"><h3>ئابدۇسالام تۇرسۇن</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/1.jpg" /><div class="pe-description"><h3>پەخىردىن قارلۇق</h3><p>شىنجاڭ قارلۇق شىركىتىنىڭ قۇرغۇچىسى</p></div></li>
+                    <li><img src="image/thumbs/2.jpg" /><div class="pe-description"><h3>ئىلياس ئابدۇۋەلى</h3><p>قارلۇق مەكتەپ مەسئۇلى</p></div></li>
+                    <li><img src="image/thumbs/3.jpg" /><div class="pe-description"><h3>مۇزەپپەر ئوسمان</h3><p>كۆچمە ئىنتىرنىت بۆلۈم باشلىقى</p></div></li>
+                    <li><img src="image/thumbs/4.jpg" /><div class="pe-description"><h3>ئادىل سەۋىر</h3><p>غوللۇق ئالما پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/5.jpg" /><div class="pe-description"><h3>يۇسۈپ ئەخمەت</h3><p>مەسۇلات كۆرۈنمە يۈز لاھىيلىگۈچى</p></div></li>
+                    <li><img src="image/thumbs/6.jpg" /><div class="pe-description"><h3>شىرئەلى ۋەلى</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/7.jpg" /><div class="pe-description"><h3>ئەركىن قۇربان</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/8.jpg" /><div class="pe-description"><h3>ئابدۇسالام تۇرسۇن</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/1.jpg" /><div class="pe-description"><h3>پەخىردىن قارلۇق</h3><p>شىنجاڭ قارلۇق شىركىتىنىڭ قۇرغۇچىسى</p></div></li>
+                    <li><img src="image/thumbs/2.jpg" /><div class="pe-description"><h3>ئىلياس ئابدۇۋەلى</h3><p>قارلۇق مەكتەپ مەسئۇلى</p></div></li>
+                    <li><img src="image/thumbs/3.jpg" /><div class="pe-description"><h3>مۇزەپپەر ئوسمان</h3><p>كۆچمە ئىنتىرنىت بۆلۈم باشلىقى</p></div></li>
+                    <li><img src="image/thumbs/4.jpg" /><div class="pe-description"><h3>ئادىل سەۋىر</h3><p>غوللۇق ئالما پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/5.jpg" /><div class="pe-description"><h3>يۇسۈپ ئەخمەت</h3><p>مەسۇلات كۆرۈنمە يۈز لاھىيلىگۈچى</p></div></li>
+                    <li><img src="image/thumbs/6.jpg" /><div class="pe-description"><h3>شىرئەلى ۋەلى</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/7.jpg" /><div class="pe-description"><h3>ئەركىن قۇربان</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                    <li><img src="image/thumbs/8.jpg" /><div class="pe-description"><h3>ئابدۇسالام تۇرسۇن</h3><p>غوللۇق توربەت پىروگىراممىرى</p></div></li>
+                </ul>
+            </section>
+        </div>
+
+    </div>
+</div>
+<!--------Wisdom word end-->
+
+<!--------Student Work start-->
+<div class="student_work">
+    <div class="student">
+        <div class="student_title">ئۇقۇغۇچىلار-ئەسەرلىرى</div>
+        <ul>
+            <li><a href="#"><img src="image/stu_pic1.png"></a></li>
+            <li class="margin_left"><a href="#"><img src="image/stu_pic2.png"></a></li>
+            <li class="margin_left"><a href="#"><img src="image/stu_pic3.png"></a></li>
+            <li class="margin_top"><a href="#"><img src="image/stu_pic4.png"></a></li>
+            <li class="margin_top margin_left"><a href="#"><img src="image/stu_pic5.png"></a></li>
+            <li class="margin_top margin_left"><a href="#"><img src="image/stu_pic6.png"></a></li>
+        </ul>
+        <div class="student_more"><a href="#"><span>...</span><span>تىخىمۇ كۆپ</span></a></div>
+    </div>
+</div>
+<!--------Student Work end-->
+
+<!--------school activity start-->
+<div class="school_activity">
+    <div class="activity">
+        <div class="activity_title">مەكتەپ پائالىيەتلىرى</div>
+        <ul>
+            <li class="big_video">
+                <a href="html/community.html">
+                    <img src="image/video_bg.png">
+
+                    <div class="big">
+                        <p>ئۇقۇم لاھىيە فېستىۋالى/كومپىيۇتېر گىرافىك سەنئىتى تەربىيىلەش سىنىپى</p>
+                    </div>
+                </a>
+            </li>
+            <li class="little_video top">
+                <a href="html/community.html">
+                    <img src="image/video_bg2.png">
+
+                    <div class="title_bg">
+                        <p>ئۇقۇم لاھىيە فېستىۋالى/كومپىيۇتېر گىرافىك سەنئىتى تەربىيىلەش سىنىپى</p>
+                    </div>
+                </a>
+            </li>
+            <li class="little_video bottom">
+                <a href="html/community.html">
+                    <img src="image/video_bg3.png">
+
+                    <div class="title_bg">
+                        <p>ئۇقۇم لاھىيە فېستىۋالى/كومپىيۇتېر گىرافىك سەنئىتى تەربىيىلەش سىنىپى</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="activity_more"><a href="#"><span>...</span><span>تىخىمۇ كۆپ</span></a></div>
+    </div>
+</div>
+<!--------School activity end-->
+
+<!--------footer start-->
+<div class="footer">
+    <div class="footer_line"></div>
+    <div class="footer_content">
+        <ul>
+            <li>
+                <p>شىنجاڭ قارلۇق كومپىيۇتېر كەسىپلىرى تەربىيىلەش مەكتىپى</p>
+            </li>
+            <li>
+                <a href="http://www.okyan.com/index.php?m=content&c=index&a=lists&catid=23" target="_blank" >مەخپىيەتلىك كىلشىمى</a>
+                <a href="http://qamus.okyan.com/index.php?doc-view-5668" target="_blank" >قارلۇق ھەققىدە</a>
+            </li>
+            <li>
+                <p>ئۈرۈمچى شەھىرى يەنئەن يولى 4–نومۇر</p>
+
+                <p>شىنخۇا كىتابخانا بىناسى 3 ,-4قەۋەت</p>
+            </li>
+            <li>
+                <p>info@qarluq.edu</p>
+
+                <p>0990 2877080</p>
+
+                <p>0990 2877006</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--------footer end-->
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.sliderPro.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+<!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>-->
+<script type="text/javascript" src="js/jquery.proximity.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function ($) {
+        $('#example5').sliderPro({
+            width: 1200,
+            height: 575,
+            orientation: 'vertical',
+            loop: false,
+            arrows: true,
+            buttons: false,
+            thumbnailsPosition: 'left',
+            thumbnailPointer: true,
+            thumbnailWidth: 290,
+            breakpoints: {
+                800: {
+                    thumbnailsPosition: 'bottom',
+                    thumbnailWidth: 270,
+                    thumbnailHeight: 100
+                },
+                500: {
+                    thumbnailsPosition: 'bottom',
+                    thumbnailWidth: 120,
+                    thumbnailHeight: 50
+                }
+            }
+        });
+    });
+
+    $(function() {
+
+        var Photo	= (function() {
+
+            var $list		= $('#pe-thumbs'),
+                    listW		= $list.width(),
+                    listL		= $list.offset().left,
+                    $elems		= $list.find('img'),
+                    $descrp		= $list.find('div.pe-description'),
+                    settings	= {
+                        maxScale	: 0.9,
+                        maxOpacity	: 0.9,
+                        minOpacity	: Number( $elems.css('opacity') )
+                    },
+                    init		= function() {
+
+                        settings.minScale = _getScaleVal();
+                        _loadImages( function() {
+
+                            _calcDescrp();
+                            _initEvents();
+
+                        });
+
+                    },
+            // Get Value of CSS Scale through JavaScript:
+            // http://css-tricks.com/get-value-of-css-rotation-through-javascript/
+                    _getScaleVal= function() {
+
+                        var st = window.getComputedStyle($elems.get(0), null),
+                                tr = st.getPropertyValue("-webkit-transform") ||
+                                        st.getPropertyValue("-moz-transform") ||
+                                        st.getPropertyValue("-ms-transform") ||
+                                        st.getPropertyValue("-o-transform") ||
+                                        st.getPropertyValue("transform") ||
+                                        "fail...";
+
+                        if( tr !== 'none' ) {
+
+                            var values = tr.split('(')[1].split(')')[0].split(','),
+                                    a = values[0],
+                                    b = values[1],
+                                    c = values[2],
+                                    d = values[3];
+
+                            return Math.sqrt( a * a + b * b );
+
+                        }
+
+                    },
+                    _calcDescrp	= function() {
+
+                        $descrp.each( function(i) {
+
+                            var $el		= $(this),
+                                    $img	= $el.prev(),
+                                    img_w	= $img.width(),
+                                    img_h	= $img.height(),
+                                    img_n_w	= settings.maxScale * img_w,
+                                    img_n_h	= settings.maxScale * img_h,
+                                    space_t = ( img_n_h - img_h ) / 2,
+                                    space_l = ( img_n_w - img_w ) / 2;
+
+                            $el.data( 'space_l', space_l ).css({
+                                height	: settings.maxScale * $el.height(),
+                                top		: -space_t,
+                                left	: img_n_w - space_l
+                            });
+
+                        });
+
+                    },
+                    _initEvents	= function() {
+
+                        $elems.on('proximity.Photo', { max: 170, throttle: 10, fireOutOfBounds : true }, function(event, proximity, distance) {
+
+                            var $el			= $(this),
+                                    $li			= $el.closest('li'),
+                                    $desc		= $el.next(),
+                                    scaleVal	= proximity * ( settings.maxScale - settings.minScale ) + settings.minScale,
+                                    scaleExp	= 'scale(' + scaleVal + ')';
+
+                            var $desc		= $el.next();
+                            if( scaleVal === settings.maxScale ) {
+
+                                $li.css( 'z-index', 1000 );
+
+                                if( $desc.offset().left + $desc.width() > listL + listW ) {
+
+                                    $desc.css( 'left', -$desc.width() - $desc.data( 'space_l' ) );
+
+                                }
+
+                                $desc.fadeIn( 800 );
+
+                            }
+                            else {
+
+                                $li.css( 'z-index', 1 );
+
+                                $desc.stop(true,true).hide();
+
+                            }
+
+                            $el.css({
+                                '-webkit-transform'	: scaleExp,
+                                '-moz-transform'	: scaleExp,
+                                '-o-transform'		: scaleExp,
+                                '-ms-transform'		: scaleExp,
+                                'transform'			: scaleExp,
+                                'opacity'			: ( proximity * ( settings.maxOpacity - settings.minOpacity ) + settings.minOpacity )
+                            });
+
+                        });
+
+                    },
+                    _loadImages	= function( callback ) {
+
+                        var loaded 	= 0,
+                                total	= $elems.length;
+
+                        $elems.each( function(i) {
+
+                            var $el = $(this);
+
+                            $('<img/>').load( function() {
+
+                                ++loaded;
+                                if( loaded === total )
+                                    callback.call();
+
+                            }).attr( 'src', $el.attr('src') );
+
+                        });
+
+                    };
+
+            return {
+                init	: init
+            };
+
+        })();
+
+        Photo.init();
+
+    });
+</script>
+</body>
+</html>

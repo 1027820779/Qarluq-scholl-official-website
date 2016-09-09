@@ -1,0 +1,307 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta id="viewport" name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="Keywords" content="卡尔罗公司,卡尔罗,IT学校,编程,qarluq,IT技能,IT公司,it技能培训,php开发,学校官网"/>
+    <meta name="Description"
+          content="新疆卡尔罗计算机培训学校（Qarluq）是新疆最大的计算机培训学校。学校提供了丰富的移动端开发、php开发、web前端、android开发以及html5等开发团队。"/>
+    <meta charset=UTF-8">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../css/login.css"/>
+    <script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../js/public.js"></script>
+
+    <script>
+        $(function (){
+            new RegExp();
+            $(".name").blur(function(){
+                var name_rgx = /^[a-z| |_|-]{3,}$/;
+                var name_val = $(this).val();
+                if(!name_rgx.test(name_val)){
+                    $(".error_icon_name").css("color", "red");
+                }
+                else{
+                    $(".error_icon_name").css("color", "#f1f2f6");
+                }
+            });
+            $(".ID").focus(function(){
+                if($(".name").val() == ""){
+                    $(".name").focus();
+                }
+            })
+            $(".ID").keyup(function(){
+                var ID_rgx = /^[0-9|x]{18}$/;
+                var ID_val = $(this).val();
+
+                if(!ID_rgx.test(ID_val)){
+                    $(".error_icon_ID").css("color", "red");
+                }
+                else{
+                    $(".error_icon_ID").css("color", "#f1f2f6");
+                }
+
+            });
+            $(".Address").focus(function(){
+                if($(".name").val==""){
+                    $(".name").focus();
+                    return;
+                }else if($(".ID").val() == ""){
+                    $(".ID").focus();
+                    return;
+                }
+            })
+            $(".phone_number").focus(function(){
+                if($(".name").val==""){
+                    $(".name").focus();
+                    return;
+                }else if($(".ID").val() == ""){
+                    $(".ID").focus();
+                    return;
+                }else if($(".Address").val()==""){
+                    $(".Address").focus();
+                    return;
+                }
+            })
+
+            $(".phone_number").keyup(function(){
+                var phone_number_rgx = /^[0-9]{11}$/;
+                var phone_number_val = $(this).val();
+
+                if(!phone_number_rgx.test(phone_number_val)){
+                    $(".error_icon_phone_number").css("color", "red")
+                }
+                else{
+                    $(".error_icon_phone_number").css("color", "#f1f2f6");
+                }
+            })
+            $(".qq_number").focus(function(){
+                if($(".name").val==""){
+                    $(".name").focus();
+                    return;
+                }else if($(".ID").val() == ""){
+                    $(".ID").focus();
+                    return;
+                }else if($(".Address").val()==""){
+                    $(".Address").focus();
+                    return;
+                }else if($(".phone_number").val()==""){
+                    $(".phone_number").focus();
+                    return;
+                }
+            });
+            $(".qq_number").blur(function () {
+
+                var qq_number_rgx = /^[0-9]{7,10}$/;
+                var qq_number_val = $(this).val();
+
+                if(!qq_number_rgx.test(qq_number_val)){
+                    $(".error_icon_qq_number").css("color", "red")
+                }
+               if (qq_number_rgx.test(qq_number_val) || qq_number_val == ""){
+                   $(".error_icon_qq_number").css("color", "#f1f2f6");
+                }
+            })
+            $(".email").focus(function(){
+                if($(".name").val==""){
+                    $(".name").focus();
+                    return;
+                }else if($(".ID").val() == ""){
+                    $(".ID").focus();
+                    return;
+                }else if($(".Address").val()==""){
+                    $(".Address").focus();
+                    return;
+                }else if($(".phone_number").val()==""){
+                    $(".phone_number").focus();
+                    return;
+                }
+            })
+        })
+    </script>
+
+</head>
+<body>
+<!--------header start-->
+
+<div class="header_top">
+    <div class="logo"></div>
+    <div class="big_title">قارلۇق مەكتىپى</div>
+    <div class="title">سەنئەت + تىخنىكىنى ئاساس قىلغان مائارىپ سۇپىسى</div>
+    <div class="link">
+        <span>0991-2877080</span>
+        <a href="login.html"><span>تىزىملىتىش ئۇچۇرى</span></a>
+        <span>|</span>
+        <span>ئالاقىلىشىش</span>
+    </div>
+</div>
+
+<div class="header_video">
+    <div class="menu_bar">
+        <ul>
+            <li><a href="../index.html">بىز</a></li>
+            <li><a href="training_program.html">تەربىيلىنىش پىروگىراممىسى</a></li>
+            <li><a class="active" href="#">تىزىملىتىش</a></li>
+            <li><a href="atmosphere.html">ئاتموسفىرا</a></li>
+            <li><a href="login.html">جەمىيەت</a></li>
+        </ul>
+    </div>
+    <div class="video"></div>
+    <div class="video_title">
+        <div class="wrap">
+            <p><a href="../index.html">بىز</a>&nbsp;<span>></span>&nbsp;<span>تىزىملىتىش</span></p>
+        </div>
+    </div>
+</div>
+
+
+<!--------header end-->
+
+    <form action="" method="">
+    <!--start body-->
+    <div class="body">
+        <div class="progress_bar">
+            تىزىمىلىتىش بىتى
+        </div>
+        <div>
+        <div class="icon_photo"></div>
+        <span class="word">
+            شەخسى ئۇچۇرىڭىزنى تولدۇرۇڭ
+        </span>
+        <div class="line"></div>
+
+            <span class="input_file" onchange="previewImage(this)"><input type="file" class="file_upload"></span>
+            <div id="dd" style=" width:990px;"></div>
+
+        <div class="upload_img"></div>
+                    <span class="word00">
+باش سۈرەت
+        </span>
+        <span class="word01">
+            باش سۆرەتكە سىغىمى 2 مىگابايىتتىن كىچىك بولغان ئۆزىڭىزنىڭ ئۆلچەملىك رەسىمىنى چىقىرىڭ بۇسىزنىڭ ئاخىپىڭىزغا كىرگۇزىلىدۇ.
+        </span>
+
+            <input type="text" placeholder="ئىسىم"class="name"/>
+
+            <span class="word_name">
+                ئسىم
+            </span>
+            <div class="error_icon_name">*</div>
+
+            <select class="country">
+                <option>aaaa</option>
+                <option>aaaa</option>
+                <option>aaaa</option>
+            </select>
+            <select class="country01">
+                <option>aaaa</option>
+                <option>aaaa</option>
+                <option>aaaa</option>
+            </select>
+            <span class="word_country">
+يۇرتى
+            </span>
+
+
+            <input type="text" placeholder="كىملىك نۇمۇر" class="ID"/>
+
+            <span class="word_ID">
+كىملىك نۇمۇر
+            </span>
+            <div class="error_icon_ID">*</div>
+            <input type="text" placeholder="ئادىرىسىڭىز" class="Address"/>
+            <span class="word_Address">
+تۇرۇشلۇق ئادىرسى
+            </span>
+            <select class="year"><option>يىل</option></select>
+            <select class="month"><option>ئاي</option></select>
+            <select class="dey"><option>كۈن</option></select>
+            <span class="word_birthDay">
+تۇغۇلغان كۈنى
+            </span>
+            <input type="radio" class="gender_boy" name="gander">
+            <p class="gender_boy_p">
+                ئوغۇل
+            </p>
+
+            <p class="gender_girl_p">
+               قىز
+            </p>
+            <input type="radio" class="gender_girl" name="gander"/>
+            <span class="word_gender">
+جىنسىڭىز
+            </span>
+            <input type="text" placeholder="تېلفۇن نۇمۇرى" class="phone_number"/>
+            <span class="word_number">
+تىلفۇن نۇمۇرىڭىز
+            </span>
+            <div class="error_icon_phone_number">*</div>
+            <input type="text" placeholder="qq نۇمۇرى" class="qq_number"/>
+            <span class="word_qq">
+نۇمۇرىڭىز qq
+            </span>
+            <input type="email" placeholder="ئې-خەت" class="email"/>
+            <span class="word_email">
+ئې-خەت
+            </span>
+            <div class="error_icon_qq_number">*</div>
+            <select class="Education">
+                <option>باشلانغۇچ مەكتەب</option>
+                <option>ئوتتۇرا مەكتەب</option>
+                <option>ئالى مەكتەب</option>
+            </select>
+            <span class="word_Education">
+ئوقۇش تارىخى
+            </span>
+            <select class="major">
+                <option>يۇمشاق دىتال</option>
+                <option>گىرافىك</option>
+            </select>
+            <span class="word_major">
+تاللىغان كەسىپ
+            </span>
+            <input type="submit" value="تىزىملىتىش"class="submit">
+        </div>
+        <div>
+
+            <!--<input type="text" class="country"/>-->
+        </div>
+    </div>
+    <!--end body-->
+    </form>
+<!--------footer start-->
+<div class="footer">
+    <div class="footer_line"></div>
+    <div class="footer_content">
+        <ul>
+            <li>
+                <p>شىنجاڭ قارلۇق كومپىيۇتېر كەسىپلىرى تەربىيىلەش مەكتىپى</p>
+            </li>
+            <li>
+                <a href="http://www.okyan.com/index.php?m=content&c=index&a=lists&catid=23" target="_blank" >مەخپىيەتلىك كىلشىمى</a>
+                <a href="http://qamus.okyan.com/index.php?doc-view-5668" target="_blank" >قارلۇق ھەققىدە</a>
+            </li>
+            <li>
+                <p>ئۈرۈمچى شەھىرى يەنئەن يولى 4–نومۇر</p>
+
+                <p>شىنخۇا كىتابخانا بىناسى 3 ,-4قەۋەت</p>
+            </li>
+            <li>
+                <p>info@qarluq.edu</p>
+
+                <p>0990 2877080</p>
+
+                <p>0990 2877006</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--------footer end-->
+
+</body>
+</html>
